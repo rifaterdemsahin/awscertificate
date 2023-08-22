@@ -1,0 +1,3 @@
+kubectl run mypod --image=nginx:latest \
+            --labels type=web \
+            --dry-run=client -o yaml > mypod.yaml
